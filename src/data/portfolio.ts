@@ -82,7 +82,7 @@ export const experience = [
   },
   {
     period: "2022 — 2024",
-    role: "Frontend Developer",
+    role: "Frontend Developer & Software tester",
     place: "Comet Digital Agency",
     detail:
       "Crafted client-facing interfaces for mobile and web products in Vientiane.",
@@ -90,7 +90,7 @@ export const experience = [
   },
   {
     period: "2022",
-    role: "Developer",
+    role: "Data annotation",
     place: "Deepvisions",
     detail: "Contributed to image detection systems and related product work.",
     href: "https://www.deepvisions.co.kr/",
