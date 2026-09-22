@@ -1,3 +1,4 @@
+import { HiOutlineMail } from "react-icons/hi";
 import { profile } from "@/data/portfolio";
 
 const links = [
@@ -38,12 +39,12 @@ export function SiteNav() {
           ))}
         </ul>
         <a
-          href={profile.whatsapp}
-          target="_blank"
-          rel="noreferrer"
-          className="shrink-0 text-sm font-medium text-white transition hover:text-highlight"
+          href={`mailto:${profile.email}`}
+          className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-white transition hover:text-highlight"
+          aria-label={`Email ${profile.email}`}
         >
-          WhatsApp
+          <HiOutlineMail className="h-4 w-4" aria-hidden />
+          Email
         </a>
       </nav>
     </header>

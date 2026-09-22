@@ -47,7 +47,21 @@ export function About() {
                   item.place
                 )}
               </p>
-              <p className="mt-3 max-w-xl text-ink-soft">{item.detail}</p>
+              {item.details.length === 1 ? (
+                <p className="mt-3 max-w-2xl text-ink-soft">{item.details[0]}</p>
+              ) : (
+                <ul className="mt-4 max-w-2xl space-y-2">
+                  {item.details.map((point) => (
+                    <li key={point} className="flex gap-3 text-ink-soft">
+                      <span
+                        className="mt-2 h-1.5 w-1.5 shrink-0 rounded-[1px] bg-accent"
+                        aria-hidden
+                      />
+                      <span className="leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ol>

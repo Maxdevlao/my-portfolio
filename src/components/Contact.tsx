@@ -37,9 +37,12 @@ export function Contact() {
           >
             GitHub — @Maxdevlao
           </a>
+          <p
+            className="inline-flex w-fit items-center border-b border-white/40 pb-1 text-sm font-medium text-white transition hover:border-highlight hover:text-highlight"
+          >
+            Email — {profile.email}
+          </p>
         </div>
-
-        <p className="mt-8 text-white/55">{profile.whatsappDisplay}</p>
       </div>
 
       <footer className="relative border-t border-white/10">

@@ -8,6 +8,7 @@ export const profile = {
   github: "https://github.com/Maxdevlao",
   whatsapp: "https://wa.me/8562058756644",
   whatsappDisplay: "+856 20 5875 6644",
+  email: "maxkeedev@gmail.com",
 };
 
 export const stacks = [
