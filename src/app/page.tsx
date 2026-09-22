@@ -1,5 +1,7 @@
 import { About } from "@/components/About";
+import { BackToTop } from "@/components/BackToTop";
 import { Contact } from "@/components/Contact";
+import { Education } from "@/components/Education";
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import { SiteNav } from "@/components/SiteNav";
@@ -13,7 +15,9 @@ export default function Home() {
       <Stack />
       <Projects />
       <About />
+      <Education />
       <Contact />
+      <BackToTop />
     </main>
   );
 }

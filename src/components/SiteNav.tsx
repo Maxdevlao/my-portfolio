@@ -4,6 +4,7 @@ const links = [
   { href: "#work", label: "Work" },
   { href: "#stack", label: "Stack" },
   { href: "#about", label: "About" },
+  { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -22,7 +23,9 @@ export function SiteNav() {
             <li
               key={link.href}
               className={
-                link.href === "#stack" ? "hidden md:list-item" : undefined
+                link.href === "#stack" || link.href === "#education"
+                  ? "hidden md:list-item"
+                  : undefined
               }
             >
               <a

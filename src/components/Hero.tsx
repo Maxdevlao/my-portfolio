@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TypingName } from "@/components/TypingName";
 import { profile } from "@/data/portfolio";
 
 export function Hero() {
@@ -25,9 +26,7 @@ export function Hero() {
           {profile.job} · {profile.location}
         </p>
 
-        <h1 className="animate-rise delay-2 font-[family-name:var(--font-display)] text-[clamp(3.4rem,12vw,8.5rem)] leading-[0.9] font-extrabold tracking-tight text-white">
-          {profile.fullName}
-        </h1>
+        <TypingName />
 
         <p className="animate-rise delay-3 mt-8 max-w-xl text-lg text-white/80 md:text-xl">
           {profile.tagline}

@@ -15,7 +15,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Maxkee Sisomsouk — Full Stack Developer",
+  title: "Maxkee — Full Stack Developer",
   description:
     "Portfolio of Maxkee Sisomsouk, a full stack developer building mobile apps and web platforms with Flutter, React Native, Next.js, and Node.js.",
   openGraph: {
