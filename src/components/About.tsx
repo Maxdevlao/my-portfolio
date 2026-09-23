@@ -8,7 +8,7 @@ export function About() {
     >
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-28">
         <div className="mb-14 max-w-2xl">
-          <p className="mb-3 text-sm uppercase tracking-[0.22em] text-muted">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-muted">
             Experience
           </p>
           <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
@@ -26,7 +26,7 @@ export function About() {
               key={`${item.period}-${item.place}`}
               className="relative pb-12 last:pb-0"
             >
-              <span className="absolute -left-[2.35rem] top-1.5 h-3 w-3 rounded-[2px] bg-accent md:-left-[2.85rem]" />
+              <span className="absolute -left-[2.35rem] top-1.5 h-3 w-3 rounded-xs bg-accent md:-left-[2.85rem]" />
               <p className="mb-2 text-sm uppercase tracking-[0.18em] text-muted">
                 {item.period}
               </p>
@@ -50,7 +50,7 @@ export function About() {
               {item.details.length === 1 ? (
                 <p className="mt-3 max-w-2xl text-ink-soft">{item.details[0]}</p>
               ) : (
-                <ul className="mt-4 max-w-2xl space-y-2">
+                <ul className="mt-4 max-w-2xl space-y-0">
                   {item.details.map((point) => (
                     <li key={point} className="flex gap-3 text-ink-soft">
                       <span

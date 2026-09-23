@@ -50,7 +50,7 @@ export function Contact() {
           <p>
             © {new Date().getFullYear()} {profile.fullName}
           </p>
-          <p>Full Stack Developer · Vientiane</p>
+          <p>Full Stack Developer · Vientiane, Laos</p>
         </div>
       </footer>
     </section>

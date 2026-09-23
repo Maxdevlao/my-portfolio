@@ -3,7 +3,7 @@ export const profile = {
   firstName: "Maxkee",
   job: "Full Stack Developer",
   tagline:
-    "I design and ship mobile apps and web platforms — from idea to production.",
+    "Full-Stack Developer offering 5 years of professional experience in modern web development frameworks and cloud infrastructure. Expert in developing robust APIs, managing databases PostgreSQL, MySQL, MongoDB, Firebase and cloud deployment via AWS, Docker. Passionate about clean code practices, system automation, and driving technical excellence within agile development environments.",
   location: "Vientiane, Laos",
   github: "https://github.com/Maxdevlao",
   whatsapp: "https://wa.me/8562058756644",
@@ -33,9 +33,9 @@ export const stacks = [
     label: "Backend",
     description: "APIs and services on Node.js",
     items: [
+      { name: "Node.js", icon: "nodejs" },
       { name: "Express", icon: "express" },
       { name: "NestJS", icon: "nestjs" },
-      { name: "Node.js", icon: "nodejs" },
       { name: "Prisma", icon: "prisma" },
     ],
   },
@@ -43,8 +43,8 @@ export const stacks = [
     label: "Database",
     description: "Relational and realtime data stores",
     items: [
-      { name: "MySQL", icon: "mysql" },
       { name: "PostgreSQL", icon: "postgresql" },
+      { name: "MySQL", icon: "mysql" },
       { name: "MongoDB", icon: "mongodb" },
       { name: "Firebase", icon: "firebase" },
     ],
@@ -70,29 +70,47 @@ export const stacks = [
     ],
   },
   {
-    label: "Tools",
-    description: "Development tools",
+    label: "IDEs",
+    description: "Code editors and IDEs",
     items: [
       { name: "VS Code", icon: "vscode" },
       { name: "Cursor", icon: "cursor" },
+      { name: "Visual Studio Code", icon: "visualstudio" },
+      { name: "WebStorm", icon: "webstorm" },
+      { name: "Xcode", icon: "xcode" },
+      { name: "Android Studio", icon: "androidstudio" },
+    ],
+  },
+  {
+    label: "API testing",
+    description: "API testing tools",
+    items: [
       { name: "Postman", icon: "postman" },
       { name: "Bruno", icon: "bruno" },
-      { name: "Figma", icon: "figma" },
+      { name: "swagger", icon: "swagger" },
+      { name: "Insomnia", icon: "insomnia" },
+    ],
+  },
+  {
+    label: "Project Management",
+    description: "Project management tools",
+    items: [
       { name: "Asana", icon: "asana" },
       { name: "Microsft Teams", icon: "microsoftteams" },
       { name: "Slack", icon: "slack" },
       { name: "ClickUp", icon: "clickup" },
       { name: "Jira", icon: "jira" },
-    ],  
+      { name: "Trello", icon: "trello" },
+    ],
   },
   {
     label: "AI tools",
-    description: "AI-powered tools",
+    description: "AI-powered development tools",
     items: [
-      { name: "OpenAI", icon: "openai" },
       { name: "ChatGPT", icon: "openai" },
-      { name: "Claude", icon: "claude" },
+      { name: "Claude code", icon: "claude" },
       { name: "Gemini", icon: "gemini" },
+      { name: "copilot", icon: "copilot" },
     ],
   },
   {
@@ -109,6 +127,7 @@ export const stacks = [
       { name: "CI/CD", icon: "cicd" },
       { name: "AWS", icon: "aws" },
       { name: "Azure", icon: "azure" },
+      { name: "Figma", icon: "figma" },
     ],
   },
 ] as const;
@@ -150,6 +169,11 @@ export const projects = [
     type: "App & Web",
     note: "Stadium scheduling and booking",
   },
+  {
+    name: "More projects...",
+    type: "App & Web",
+    note: "More projects...",
+  },
 ];
 
 export const experience = [
@@ -164,7 +188,8 @@ export const experience = [
       "Design database structures and business logic for complex applications.",
       "Integrate third-party services including Firebase, payment services, external APIs, and social platforms.",
       "Troubleshoot production issues involving APIs, networking, authentication, mobile builds, and server configuration.",
-      "Participate in system architecture and technical decision-making for new features and platforms."
+      "Participate in system architecture and technical decision-making for new features and platforms.",
+      "Build iOS and Android mobile apps to the App Store and Google Play Store.",
     ],
     href: "https://auton.kr/",
   },
@@ -202,14 +227,14 @@ export const experience = [
 export const education = [
   {
     period: "2018 — 2022",
-    role: "Website Development",
-    place: "University of Laos (Bachelor degree)",
+    role: "Website Development (Bachelor degree)",
+    place: "National University of Laos",
     detail: "Studied and practiced web development while at university.",
     href: null,
   },
   {
     period: "2018 — 2021",
-    role: "Business English",
+    role: "Business English (Diploma)",
     place: "LaoVieng College",
     detail: "Completed Business English studies alongside technical work.",
     href: null,
@@ -220,5 +245,11 @@ export const education = [
     place: "Naxaythong High School",
     detail: "Completed high school studies in Naxaythong High School.",
     href: null,
-  }
+  },
+] as const;
+
+export const languages = [
+  { name: "Lao", level: "Native" },
+  { name: "English", level: "Intermediate" },
+  { name: "Thai", level: "Fluent" },
 ] as const;

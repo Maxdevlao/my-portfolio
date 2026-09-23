@@ -6,7 +6,7 @@ export function Education() {
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-28">
         <div className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
-            <p className="mb-3 text-sm uppercase tracking-[0.22em] text-muted">
+            <p className="mb-3 font-bold text-sm uppercase tracking-[0.22em] text-muted">
               Education
             </p>
             <h2 className="font-display text-4xl font-bold tracking-tight text-ink md:text-5xl">
