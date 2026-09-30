@@ -8,7 +8,7 @@ export function Contact() {
     >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(15,107,92,0.28)_0%,transparent_48%)]" />
 
-      <div className="relative mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-28">
+      <div data-reveal className="relative mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-28">
         <p className="mb-3 text-sm uppercase tracking-[0.22em] text-white/50">
           Contact
         </p>

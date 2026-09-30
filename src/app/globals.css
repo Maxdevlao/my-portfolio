@@ -137,6 +137,16 @@ body {
   animation-delay: 0.48s;
 }
 
+header.nav-scrolled nav {
+  background: rgba(11, 20, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -5,6 +5,7 @@ import { Education } from "@/components/Education";
 import { Hero } from "@/components/Hero";
 import { Languages } from "@/components/Languages";
 import { Projects } from "@/components/Projects";
+import { ScrollMotion } from "@/components/ScrollMotion";
 import { SiteNav } from "@/components/SiteNav";
 import { Stack } from "@/components/Stack";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Languages />
       <Contact />
       <BackToTop />
+      <ScrollMotion />
     </main>
   );
 }

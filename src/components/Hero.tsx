@@ -8,7 +8,7 @@ export function Hero() {
       id="top"
       className="grain relative flex min-h-[100svh] items-end overflow-hidden"
     >
-      <div className="absolute inset-0">
+      <div data-hero-media className="absolute inset-0 will-change-transform">
         <Image
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80"
           alt="Modern workspace with soft natural light"

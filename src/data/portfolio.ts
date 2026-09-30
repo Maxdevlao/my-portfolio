@@ -1,5 +1,5 @@
 export const profile = {
-  fullName: "Maxkee Sisomsouk",
+  fullName: "Maxkee SISOMSOUK",
   firstName: "Maxkee",
   job: "Full Stack Developer",
   tagline:
@@ -27,6 +27,8 @@ export const stacks = [
       { name: "Next.js", icon: "nextjs" },
       { name: "React", icon: "react" },
       { name: "Vue.js", icon: "vue" },
+      { name: "HTML", icon: "html" },
+      { name: "CSS", icon: "css" },
     ],
   },
   {

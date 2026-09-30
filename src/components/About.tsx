@@ -7,7 +7,7 @@ export function About() {
       className="border-t border-line bg-[linear-gradient(180deg,#eef1f0_0%,#e4ebe8_100%)]"
     >
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-28">
-        <div className="mb-14 max-w-2xl">
+        <div data-reveal className="mb-14 max-w-2xl">
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-muted">
             Experience
           </p>
@@ -24,6 +24,7 @@ export function About() {
           {experience.map((item) => (
             <li
               key={`${item.period}-${item.place}`}
+              data-reveal
               className="relative pb-12 last:pb-0"
             >
               <span className="absolute -left-[2.35rem] top-1.5 h-3 w-3 rounded-xs bg-accent md:-left-[2.85rem]" />

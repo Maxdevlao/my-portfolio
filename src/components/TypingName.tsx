@@ -69,7 +69,7 @@ export function TypingName() {
 
   return (
     <h1
-      className="min-h-[1.1em] font-[family-name:var(--font-display)] text-[clamp(3.4rem,12vw,8.5rem)] leading-[0.9] font-extrabold tracking-tight text-white"
+      className="max-w-full min-h-[2.2em] font-[family-name:var(--font-display)] text-[clamp(1.45rem,8vw,6.5rem)] leading-[1.08] font-extrabold tracking-tight text-white sm:min-h-[1.15em] sm:text-[clamp(2.4rem,12vw,6.5rem)] sm:leading-[0.95]"
       aria-label={fullText}
     >
       <span aria-hidden>{text}</span>

@@ -52,6 +52,8 @@ import {
   SiWebstorm,
   SiXcode,
   SiFigma,
+  SiCss,
+  SiHtml5,
 } from "react-icons/si";
 import { VscAzure, VscVscode } from "react-icons/vsc";
 import { stacks } from "@/data/portfolio";
@@ -64,6 +66,8 @@ const techIcons: Record<TechIcon, IconType> = {
   nextjs: SiNextdotjs,
   react: SiReact,
   vue: SiVuedotjs,
+  html: SiHtml5,
+  css: SiCss,
   express: SiExpress,
   nestjs: SiNestjs,
   nodejs: SiNodedotjs,
@@ -118,6 +122,8 @@ const techTints: Record<TechIcon, string> = {
   nextjs: "text-ink bg-ink/8",
   react: "text-[#61DAFB] bg-[#61DAFB]/15",
   vue: "text-[#42B883] bg-[#42B883]/12",
+  html: "text-[#E34F26] bg-[#E34F26]/12",
+  css: "text-[#1572B6] bg-[#1572B6]/12",
   express: "text-ink bg-ink/8",
   nestjs: "text-[#E0234E] bg-[#E0234E]/10",
   nodejs: "text-[#339933] bg-[#339933]/12",
@@ -170,7 +176,7 @@ export function Stack() {
   return (
     <section id="stack" className="border-t border-line bg-bg-elevated">
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-28">
-        <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div data-reveal className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="mb-3 text-md font-bold uppercase tracking-[0.22em] text-muted">
               Key stack
@@ -187,7 +193,7 @@ export function Stack() {
 
         <div className="space-y-4">
           {stacks.map((group) => (
-            <div key={group.label}>
+            <div key={group.label} data-reveal-group>
               <div className="mb-5 flex flex-wrap items-baseline gap-x-4 gap-y-1 border-b border-line pb-4">
                 <h3 className="font-display text-xl font-bold tracking-tight text-ink">
                   {group.label}
@@ -201,7 +207,7 @@ export function Stack() {
                   const tint = techTints[item.icon];
 
                   return (
-                    <li key={item.name} className="w-fit">
+                    <li key={item.name} data-reveal-child className="w-fit">
                       <div className="group flex w-fit items-center gap-2 rounded-2xl border border-line bg-white/70 px-2.5 py-1.5 transition duration-300 hover:-translate-y-0.5 hover:border-green-700 hover:bg-white">
                         <span
                           className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-xl transition duration-300 group-hover:scale-105 ${tint}`}

@@ -4,7 +4,7 @@ export function Education() {
   return (
     <section id="education" className="border-t border-line bg-bg-elevated">
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-8 md:py-28">
-        <div className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div data-reveal className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="mb-3 font-bold text-sm uppercase tracking-[0.22em] text-muted">
               Education
@@ -23,6 +23,7 @@ export function Education() {
           {education.map((item, index) => (
             <li
               key={`${item.period}-${item.place}`}
+              data-reveal
               className="group relative border-b border-line py-10 md:border-b-0 md:border-r md:px-8 md:py-12 md:first:pl-0 md:last:border-r-0 md:last:pr-0"
             >
               <span className="mb-6 inline-flex font-mono text-sm text-muted">
